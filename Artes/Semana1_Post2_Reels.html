@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 2 - Reels 3 Sinais</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1920px;
+    background: linear-gradient(180deg, #001F3F 0%, #0F4C81 50%, #1E3A8A 100%);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative; overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 80px; left: 80px;
+    height: 55px; width: auto;
+  }
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px; font-weight: 900; color: #FFFFFF;
+    text-align: center; margin-bottom: 90px; padding: 0 80px; line-height: 1.2;
+  }
+  .title span { color: #FF6B00; }
+  .signs { display: flex; flex-direction: column; gap: 45px; padding: 0 80px; width: 100%; }
+  .sign {
+    background: rgba(255,255,255,0.08); padding: 45px 55px; border-radius: 25px;
+    border-left: 6px solid #FF6B00;
+  }
+  .sign-emoji { font-size: 75px; margin-bottom: 18px; }
+  .sign-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px; color: #FFFFFF; line-height: 1.4;
+  }
+  .cta {
+    position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%);
+    background: #FF6B00; color: #FFFFFF;
+    font-family: 'Inter', sans-serif; font-size: 34px; font-weight: 700;
+    padding: 28px 70px; border-radius: 50px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  }
+  .deco-circle1 {
+    position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%;
+    background: rgba(255,107,0,0.08);
+  }
+  .deco-circle2 {
+    position: absolute; bottom: 300px; left: -150px;
+    width: 400px; height: 400px; border-radius: 50%;
+    background: rgba(255,255,255,0.04);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="deco-circle1"></div>
+  <div class="deco-circle2"></div>
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="title">3 sinais de que sua empresa precisa estar no <span>digital</span> 🚨</div>
+  <div class="signs">
+    <div class="sign">
+      <div class="sign-emoji">😱</div>
+      <div class="sign-text">Seu cliente pesquisa seu serviço no Google e... não te encontra?</div>
+    </div>
+    <div class="sign">
+      <div class="sign-emoji">🤷</div>
+      <div class="sign-text">Você depende só de indicação e não sabe quando vai chegar o próximo?</div>
+    </div>
+    <div class="sign">
+      <div class="sign-emoji">😤</div>
+      <div class="sign-text">Seu concorrente aparece no Google e você não?</div>
+    </div>
+  </div>
+  <div class="cta">Saiba mais 👇</div>
+</div>
+</body>
+</html>

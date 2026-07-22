@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 4 - Slide 5</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1080px;
+    background: linear-gradient(135deg, #001F3F 0%, #0F4C81 100%);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 50px; left: 60px;
+    height: 50px; width: auto;
+  }
+  .badge {
+    position: absolute; top: 50px; right: 60px;
+    background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8);
+    padding: 10px 22px; border-radius: 30px;
+    font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600;
+  }
+  .benefits { display: flex; flex-direction: column; gap: 30px; padding: 0 70px; width: 100%; }
+  .benefit {
+    display: flex; align-items: center; gap: 22px;
+    background: rgba(255,255,255,0.08); padding: 30px 35px; border-radius: 18px;
+  }
+  .check {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: #FF6B00; color: #FFFFFF;
+    font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 800;
+    display: flex; justify-content: center; align-items: center; flex-shrink: 0;
+  }
+  .benefit-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px; color: #FFFFFF; font-weight: 700;
+  }
+  .accent-bar {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #FF6B00, #FA7000);
+  }
+  .dots { position: absolute; bottom: 60px; display: flex; gap: 12px; }
+  .dots span { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.25); }
+  .dots span.active { background: #FF6B00; width: 42px; border-radius: 7px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="badge">5 / 6</div>
+  <div class="benefits">
+    <div class="benefit">
+      <div class="check">✓</div>
+      <div class="benefit-text">Você aparece no Google gastando menos</div>
+    </div>
+    <div class="benefit">
+      <div class="check">✓</div>
+      <div class="benefit-text">O cliente te encontra na hora certa</div>
+    </div>
+    <div class="benefit">
+      <div class="check">✓</div>
+      <div class="benefit-text">Contatos reais por WhatsApp ou ligação</div>
+    </div>
+  </div>
+  <div class="dots">
+    <span></span><span></span><span></span><span></span><span class="active"></span><span></span>
+  </div>
+  <div class="accent-bar"></div>
+</div>
+</body>
+</html>

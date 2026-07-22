@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 7 - Slide 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1080px;
+    background: linear-gradient(135deg, #001F3F 0%, #0F4C81 50%, #1E3A8A 100%);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative; overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 50px; left: 60px;
+    height: 50px; width: auto;
+  }
+  .badge {
+    position: absolute; top: 50px; right: 60px;
+    background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.8);
+    padding: 10px 22px; border-radius: 30px;
+    font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600;
+  }
+  .emoji-big { font-size: 110px; margin-bottom: 40px; }
+  .main-text { text-align: center; z-index: 1; padding: 0 80px; }
+  .main-text h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 64px; font-weight: 900; color: #FFFFFF;
+    line-height: 1.15; margin-bottom: 25px;
+  }
+  .main-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px; color: rgba(255,255,255,0.7);
+  }
+  .dots { position: absolute; bottom: 60px; display: flex; gap: 12px; }
+  .dots span { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.25); }
+  .dots span.active { background: #FF6B00; width: 42px; border-radius: 7px; }
+  .deco-line {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #FF6B00, #FA7000, #FF6B00);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="badge">1 / 5</div>
+  <div class="emoji-big">🤔</div>
+  <div class="main-text">
+    <h1>5 motivos pra você não estar aparecendo no Google</h1>
+    <p>(e como resolver cada um deles)</p>
+  </div>
+  <div class="dots">
+    <span class="active"></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="deco-line"></div>
+</div>
+</body>
+</html>

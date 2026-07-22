@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 4 - Slide 6</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1080px;
+    background: linear-gradient(135deg, #FF6B00 0%, #FA7000 100%);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 50px; left: 60px;
+    height: 50px; width: auto;
+  }
+  .badge {
+    position: absolute; top: 50px; right: 60px;
+    background: rgba(255,255,255,0.2); color: #FFFFFF;
+    padding: 10px 22px; border-radius: 30px;
+    font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600;
+  }
+  .main-text { text-align: center; padding: 0 80px; }
+  .main-text h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 68px; font-weight: 900; color: #FFFFFF; margin-bottom: 25px;
+  }
+  .main-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px; color: rgba(255,255,255,0.9); margin-bottom: 45px;
+  }
+  .cta-btn {
+    background: #001F3F; color: #FFFFFF;
+    font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 700;
+    padding: 22px 55px; border-radius: 50px; display: inline-block;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  }
+  .url {
+    position: absolute; bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255,255,255,0.6); font-size: 22px;
+  }
+  .dots { position: absolute; bottom: 60px; display: flex; gap: 12px; }
+  .dots span { width: 14px; height: 14px; border-radius: 50%; background: rgba(255,255,255,0.3); }
+  .dots span.active { background: #FFFFFF; width: 42px; border-radius: 7px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="badge">6 / 6</div>
+  <div class="main-text">
+    <h1>Quer participar? 🚀</h1>
+    <p>Cadastre sua empresa e comece a aparecer no Google hoje mesmo</p>
+    <div class="cta-btn">Link na bio 🔗</div>
+  </div>
+  <div class="url">negociobr.com</div>
+  <div class="dots">
+    <span></span><span></span><span></span><span></span><span></span><span class="active"></span>
+  </div>
+</div>
+</body>
+</html>

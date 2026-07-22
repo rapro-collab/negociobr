@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 5 - Reels Preços</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1920px;
+    background: linear-gradient(180deg, #001F3F 0%, #0F4C81 50%, #1E3A8A 100%);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative; overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 80px; left: 80px;
+    height: 55px; width: auto;
+  }
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 68px; font-weight: 900; color: #FFFFFF;
+    text-align: center; margin-bottom: 70px; padding: 0 80px; line-height: 1.2;
+  }
+  .prices { display: flex; flex-direction: column; gap: 40px; padding: 0 80px; width: 100%; }
+  .price-item {
+    background: rgba(255,255,255,0.05); padding: 45px 55px; border-radius: 25px;
+    display: flex; align-items: center; gap: 35px;
+  }
+  .price-item.negotiobr {
+    background: linear-gradient(135deg, rgba(255,107,0,0.15), rgba(250,112,0,0.15));
+    border: 3px solid #FF6B00;
+  }
+  .price-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px; color: rgba(255,255,255,0.7); font-weight: 500; min-width: 280px;
+  }
+  .price-value {
+    font-family: 'Inter', sans-serif;
+    font-size: 52px; font-weight: 900;
+    white-space: nowrap;
+  }
+  .price-item:not(.negotiobr) .price-value { color: #FCA5A5; }
+  .price-item.negotiobr .price-value { color: #FF6B00; }
+  .price-emoji { font-size: 75px; }
+  .cta {
+    position: absolute; bottom: 120px; left: 50%; transform: translateX(-50%);
+    background: #FF6B00; color: #FFFFFF;
+    font-family: 'Inter', sans-serif; font-size: 34px; font-weight: 700;
+    padding: 28px 70px; border-radius: 50px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  }
+  .deco-circle1 {
+    position: absolute; top: -100px; right: -100px;
+    width: 300px; height: 300px; border-radius: 50%;
+    background: rgba(255,107,0,0.08);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="deco-circle1"></div>
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="title">Quanto custa aparecer no Google? 💰</div>
+  <div class="prices">
+    <div class="price-item">
+      <div class="price-emoji">💸</div>
+      <div class="price-label">Agência</div>
+      <div class="price-value">R$ 2.000</div>
+    </div>
+    <div class="price-item">
+      <div class="price-emoji">💸💸</div>
+      <div class="price-label">Google Ads sozinho</div>
+      <div class="price-value">R$ 1.500</div>
+    </div>
+    <div class="price-item">
+      <div class="price-emoji">📉</div>
+      <div class="price-label">Fazer você mesmo</div>
+      <div class="price-value">R$ 0</div>
+    </div>
+    <div class="price-item negotiobr">
+      <div class="price-emoji">✅</div>
+      <div class="price-label">NegócioBR</div>
+      <div class="price-value">R$ 99</div>
+    </div>
+  </div>
+  <div class="cta">Saiba mais 👇</div>
+</div>
+</body>
+</html>

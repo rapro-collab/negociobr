@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 7 - Slide 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1080px; background: #FFFFFF;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 50px; left: 60px;
+    height: 50px; width: auto;
+  }
+  .badge {
+    position: absolute; top: 50px; right: 60px;
+    background: #FEF2F2; color: #DC2626;
+    padding: 10px 22px; border-radius: 30px;
+    font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700;
+  }
+  .excuses { display: flex; flex-direction: column; gap: 28px; padding: 0 70px; width: 100%; }
+  .excuse {
+    display: flex; align-items: center; gap: 22px;
+    background: #FEF2F2; padding: 28px 32px; border-radius: 18px;
+    border-left: 5px solid #DC2626;
+  }
+  .excuse-num {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: #DC2626; color: #FFFFFF;
+    font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 800;
+    display: flex; justify-content: center; align-items: center; flex-shrink: 0;
+  }
+  .excuse-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; color: #1E293B; flex: 1;
+  }
+  .excuse-text strong { color: #DC2626; font-weight: 700; }
+  .excuse-emoji { font-size: 48px; }
+  .accent-bar {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #DC2626, #FF6B00);
+  }
+  .dots { position: absolute; bottom: 60px; display: flex; gap: 12px; }
+  .dots span { width: 14px; height: 14px; border-radius: 50%; background: #CBD5E1; }
+  .dots span.active { background: #FF6B00; width: 42px; border-radius: 7px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="badge">2 / 5</div>
+  <div class="excuses">
+    <div class="excuse">
+      <div class="excuse-num">1</div>
+      <div class="excuse-text"><strong>"Não tenho tempo pra isso"</strong></div>
+      <div class="excuse-emoji">⏰</div>
+    </div>
+    <div class="excuse">
+      <div class="excuse-num">2</div>
+      <div class="excuse-text"><strong>"Não sei mexer com tecnologia"</strong></div>
+      <div class="excuse-emoji">🤷</div>
+    </div>
+    <div class="excuse">
+      <div class="excuse-num">3</div>
+      <div class="excuse-text"><strong>"Já tenho Instagram"</strong></div>
+      <div class="excuse-emoji">📱</div>
+    </div>
+  </div>
+  <div class="dots">
+    <span></span><span class="active"></span><span></span><span></span><span></span>
+  </div>
+  <div class="accent-bar"></div>
+</div>
+</body>
+</html>

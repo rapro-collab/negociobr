@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 1 - Slide 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1080px; background: #FFFFFF;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 50px; left: 60px;
+    height: 50px; width: auto;
+  }
+  .badge {
+    position: absolute; top: 50px; right: 60px;
+    background: #F4F6F9; color: #0F4C81;
+    padding: 10px 22px; border-radius: 30px;
+    font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700;
+  }
+  .icon-circle {
+    width: 160px; height: 160px; border-radius: 50%;
+    background: linear-gradient(135deg, #F4F6F9, #E8EDF2);
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 50px; font-size: 70px;
+  }
+  .main-text { text-align: center; padding: 0 80px; }
+  .main-text h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 62px; font-weight: 900; color: #001F3F;
+    line-height: 1.2; margin-bottom: 25px;
+  }
+  .main-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px; color: #64748B; line-height: 1.5;
+  }
+  .accent-bar {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #0F4C81, #FF6B00);
+  }
+  .dots { position: absolute; bottom: 60px; display: flex; gap: 12px; }
+  .dots span { width: 14px; height: 14px; border-radius: 50%; background: #CBD5E1; }
+  .dots span.active { background: #FF6B00; width: 42px; border-radius: 7px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="badge">2 / 5</div>
+  <div class="icon-circle">📍</div>
+  <div class="main-text">
+    <h1>Um guia comercial digital</h1>
+    <p>Conectando empresas locais a clientes reais da sua região</p>
+  </div>
+  <div class="dots">
+    <span></span><span class="active"></span><span></span><span></span><span></span>
+  </div>
+  <div class="accent-bar"></div>
+</div>
+</body>
+</html>

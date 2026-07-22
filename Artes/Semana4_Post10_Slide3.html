@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 10 - Slide 3</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1080px; background: #F4F6F9;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 50px; left: 60px;
+    height: 50px; width: auto;
+  }
+  .badge {
+    position: absolute; top: 50px; right: 60px;
+    background: #FFF3E8; color: #C24D00;
+    padding: 10px 22px; border-radius: 30px;
+    font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700;
+  }
+  .companies { display: flex; flex-direction: column; gap: 28px; padding: 0 70px; width: 100%; }
+  .company {
+    display: flex; align-items: center; gap: 22px;
+    background: #FFFFFF; padding: 32px 38px; border-radius: 18px;
+    border-left: 5px solid #FF6B00;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+  .company-icon { font-size: 55px; }
+  .company-info { flex: 1; }
+  .company-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px; font-weight: 700; color: #001F3F; margin-bottom: 4px;
+  }
+  .company-category {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; color: #64748B;
+  }
+  .company-badge {
+    background: #FF6B00; color: #FFFFFF;
+    padding: 8px 16px; border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px; font-weight: 700;
+  }
+  .dots { position: absolute; bottom: 60px; display: flex; gap: 12px; }
+  .dots span { width: 14px; height: 14px; border-radius: 50%; background: #CBD5E1; }
+  .dots span.active { background: #FF6B00; width: 42px; border-radius: 7px; }
+  .accent-bar {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #FF6B00, #0F4C81);
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="../Imagens/logo-fundo-transparente.png" alt="NegócioBR">
+  <div class="badge">3 / 4</div>
+  <div class="companies">
+    <div class="company">
+      <div class="company-icon">💡</div>
+      <div class="company-info">
+        <div class="company-name">Casa do Led Lustres</div>
+        <div class="company-category">Iluminação</div>
+      </div>
+      <div class="company-badge">PREMIUM</div>
+    </div>
+    <div class="company">
+      <div class="company-icon">💪</div>
+      <div class="company-info">
+        <div class="company-name">BlueFit Academia</div>
+        <div class="company-category">Academias</div>
+      </div>
+      <div class="company-badge">PREMIUM</div>
+    </div>
+  </div>
+  <div class="dots">
+    <span></span><span></span><span class="active"></span><span></span>
+  </div>
+  <div class="accent-bar"></div>
+</div>
+</body>
+</html>

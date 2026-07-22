@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Post 7 - Slide 4</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; }
+  .slide {
+    width: 1080px; height: 1080px; background: #FFFFFF;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  }
+  .logo {
+    position: absolute; top: 50px; left: 60px;
+    height: 50px; width: auto;
+  }
+  .badge {
+    position: absolute; top: 50px; right: 60px;
+    background: #FFF3E8; color: #C24D00;
+    padding: 10px 22px; border-radius: 30px;
+    font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 700;
+  }
+  .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 44px; font-weight: 900; color: #001F3F;
+    margin-bottom: 40px; text-align: center; padding: 0 80px;
+  }
+  .solutions { display: flex; flex-direction: column; gap: 22px; padding: 0 70px; width: 100%; }
+  .solution {
+    display: flex; align-items: center; gap: 20px;
+    background: #FFF3E8; padding: 26px 30px; border-radius: 16px;
+    border-left: 5px solid #FF6B00;
+  }
+  .solution-check {
+    width: 46px; height: 46px; border-radius: 50%;
+    background: #FF6B00; color: #FFFFFF;
+    font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 800;
+    display: flex; justify-content: center; align-items: center; flex-shrink: 0;
+  }
+  .solution-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px; color: #1E293B; flex: 1; line-height: 1.4;
+  }
+  .solution-text strong { color: #FF6B00; font-weight: 700; }
+  .accent-bar {
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(90deg, #FF6B00, #0F4C81);
+  }
+  .dots { position: absolute; bottom: 60px; display: flex; gap: 12px; }
+  .dots span { width: 14px; height: 14px; border-radius: 50%; background: #CBD5E1; }
+  .dots span.active { background: #FF6B00; width: 42px; border-radius: 7px; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <img class="logo" src="../Imagens/logo-fundo-branco.png" alt="NegócioBR">
+  <div class="badge">4 / 5</div>
+  <div class="title">Como o NegócioBR resolve:</div>
+  <div class="solutions">
+    <div class="solution">
+      <div class="solution-check">✓</div>
+      <div class="solution-text"><strong>A gente cuida de tudo</strong>, você só recebe os contatos</div>
+    </div>
+    <div class="solution">
+      <div class="solution-check">✓</div>
+      <div class="solution-text"><strong>Nosso painel é mais fácil</strong> que pedir pizza por app</div>
+    </div>
+    <div class="solution">
+      <div class="solution-check">✓</div>
+      <div class="solution-text"><strong>Google é onde o cliente PESQUISA</strong>, não só navega</div>
+    </div>
+    <div class="solution">
+      <div class="solution-check">✓</div>
+      <div class="solution-text"><strong>A partir de R$ 99/mês</strong> — menos que um jantar</div>
+    </div>
+    <div class="solution">
+      <div class="solution-check">✓</div>
+      <div class="solution-text"><strong>43 empresas já estão lá</strong> — e você pode cancelar quando quiser</div>
+    </div>
+  </div>
+  <div class="dots">
+    <span></span><span></span><span></span><span class="active"></span><span></span>
+  </div>
+  <div class="accent-bar"></div>
+</div>
+</body>
+</html>
