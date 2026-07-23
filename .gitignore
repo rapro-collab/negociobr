@@ -27,3 +27,8 @@ npm-debug.log*
 
 # Local opencode caches
 .opencode/
+
+# Local tool/cache dirs
+.aionrs/
+.claude/
+.hermes/
